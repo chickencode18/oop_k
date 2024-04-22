@@ -1,0 +1,15 @@
+﻿  BieuThucCong.cpp
+D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\BieuThucCong.cpp(10,19): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  BieuThucNhan.cpp
+D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\BieuThucNhan.cpp(10,19): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  BieuThucSoHoc.cpp
+D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\BieuThucSoHoc.cpp(12,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\BieuThucSoHoc.cpp(53,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\BieuThucSoHoc.cpp(56,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\BieuThucSoHoc.cpp(59,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  BieuThucTru.cpp
+D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\BieuThucTru.cpp(10,19): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  main.cpp
+D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\main.cpp(51,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Chuong5-BaiTH.vcxproj -> D:\code\studio\HTHoangKhoaTuan\x64\Debug\Chuong5-BaiTH.exe
