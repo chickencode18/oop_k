@@ -23,7 +23,7 @@ void kiemtrakq(BieuThucSoHoc& sh,int& capdo,int& diem,int& socaudunglientiep)
 		if (capdo > 1) capdo--;
 		if (diem > 0) diem--;
 	}
-	if (socaudunglientiep == 3) {
+	if (socaudunglientiep == 5) {
 		capdo++;
 		socaudunglientiep = 0;
 	}
@@ -85,10 +85,21 @@ int main()
 			sh = nullptr;
 		}
 		// Random chon loai bieu thuc
-		int loaibieuthuc = rand() % 3;
-		if (loaibieuthuc == 0) sh = new BieuThucCong(capdo);
-		else if (loaibieuthuc == 1) sh = new BieuThucTru(capdo);
-		else if (loaibieuthuc == 2) sh = new BieuThucNhan(capdo);
+
+		if (capdo == 1) sh = new BieuThucCong(capdo);
+		else if (capdo == 2 || capdo == 4)
+		{
+			int loaibieuthuc = rand() % 2;
+			if (loaibieuthuc == 0) sh = new BieuThucCong(capdo);
+			else sh = new BieuThucTru(capdo);
+		}
+		else if (capdo == 3 || capdo > 4)
+		{
+			int loaibieuthuc = rand() % 3;
+			if (loaibieuthuc == 0) sh = new BieuThucCong(capdo);
+			else if(loaibieuthuc == 1) sh = new BieuThucTru(capdo);
+			else sh = new BieuThucNhan(capdo);
+		}
 
 		hienthi(capdo, diem);
 

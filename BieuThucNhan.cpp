@@ -2,7 +2,11 @@
 
 BieuThucNhan::BieuThucNhan(int capDo) : BieuThucSoHoc(capDo)
 {
-    setPheptoan('*');
+    //if (capDo == 3 || capDo > 4)
+    //{
+       setPheptoan('*');
+    //}
+   
 }
 
 float BieuThucNhan::tinhKetQua() const

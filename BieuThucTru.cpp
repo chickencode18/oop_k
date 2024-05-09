@@ -2,7 +2,10 @@
 
 BieuThucTru::BieuThucTru(int capDo) : BieuThucSoHoc(capDo)
 {
-    setPheptoan('-');
+    //if (capDo != 1)
+    //{
+        setPheptoan('-');
+    //}
 }
 
 float BieuThucTru::tinhKetQua() const
