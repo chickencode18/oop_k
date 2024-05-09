@@ -11,7 +11,7 @@ BieuThucSoHoc::BieuThucSoHoc(int capDo)
 {
     srand(time(nullptr));
 
-    switch (capDo)
+    /*switch (capDo)
     {
     case 1:
         pheptoan = '+';
@@ -37,6 +37,33 @@ BieuThucSoHoc::BieuThucSoHoc(int capDo)
     {
         a = rand() % 91 + 10;
         b = rand() % 91 + 10;
+    }*/
+    if (capDo == 1) {
+        a = rand() % 10 + 1;
+        b = rand() % 10 + 1;
+        pheptoan = '+';
+    }
+    else if (capDo == 2) {
+        a = rand() % 10 + 1;
+        b = rand() % 10 + 1;
+        pheptoan = (rand() % 2 == 0) ? '+' : '-';
+    }
+    else if (capDo == 3) {
+        a = rand() % 10 + 1;
+        b = rand() % 10 + 1;
+        int op = rand() % 3;
+        pheptoan = (op == 0) ? '+' : (op == 1) ? '-' : '*';
+    }
+    else if (capDo == 4) {
+        a = rand() % 100 + 1;
+        b = rand() % 100 + 1;
+        pheptoan = (rand() % 2 == 0) ? '+' : '-';
+    }
+    else {
+        a = rand() % 100 + 1;
+        b = rand() % 100 + 1;
+        int op = rand() % 3;
+        pheptoan = (op == 0) ? '+' : (op == 1) ? '-' : '*';
     }
 }
 
@@ -104,7 +131,7 @@ istream& operator>>(istream& in, BieuThucSoHoc& x)
 {
     cout << "Nhap a: ";
     in >> x.a;
-    cout << "Nhap phep toan (+, -, *, /): ";
+    cout << "Nhap phep toan (+, -, *): ";
     in >> x.pheptoan;
     cout << "Nhap b: ";
     in >> x.b;
