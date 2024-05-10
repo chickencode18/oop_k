@@ -27,6 +27,9 @@
     <ClInclude Include="BieuThucNhan.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BieuThucPhucTap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BieuThucSoHoc.cpp">
@@ -42,6 +45,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BieuThucNhan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BieuThucPhucTap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

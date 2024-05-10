@@ -1,3 +1,6 @@
-﻿  main.cpp
-D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\main.cpp(51,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+﻿  BieuThucSoHoc.cpp
+D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\BieuThucSoHoc.cpp(12,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\BieuThucSoHoc.cpp(34,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\BieuThucSoHoc.cpp(37,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\code\studio\HTHoangKhoaTuan\Chuong5-BaiTH\BieuThucSoHoc.cpp(40,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   Chuong5-BaiTH.vcxproj -> D:\code\studio\HTHoangKhoaTuan\x64\Debug\Chuong5-BaiTH.exe

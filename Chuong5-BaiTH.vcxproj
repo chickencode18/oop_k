@@ -129,12 +129,14 @@
   <ItemGroup>
     <ClInclude Include="BieuThucCong.h" />
     <ClInclude Include="BieuThucNhan.h" />
+    <ClInclude Include="BieuThucPhucTap.h" />
     <ClInclude Include="BieuThucSoHoc.h" />
     <ClInclude Include="BieuThucTru.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BieuThucCong.cpp" />
     <ClCompile Include="BieuThucNhan.cpp" />
+    <ClCompile Include="BieuThucPhucTap.cpp" />
     <ClCompile Include="BieuThucSoHoc.cpp" />
     <ClCompile Include="BieuThucTru.cpp" />
     <ClCompile Include="main.cpp" />

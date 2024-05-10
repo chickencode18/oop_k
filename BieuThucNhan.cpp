@@ -1,12 +1,13 @@
 #include "BieuThucNhan.h"
 
+BieuThucNhan::BieuThucNhan() : BieuThucSoHoc()
+{
+    setPheptoan('*');
+}
+
 BieuThucNhan::BieuThucNhan(int capDo) : BieuThucSoHoc(capDo)
 {
-    //if (capDo == 3 || capDo > 4)
-    //{
-       setPheptoan('*');
-    //}
-   
+    setPheptoan('*');
 }
 
 float BieuThucNhan::tinhKetQua() const

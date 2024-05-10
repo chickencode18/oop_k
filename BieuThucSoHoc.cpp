@@ -1,4 +1,5 @@
 #include "BieuThucSoHoc.h"
+#include "BieuThucPhucTap.h"
 
 BieuThucSoHoc::BieuThucSoHoc()
 {
@@ -20,7 +21,7 @@ BieuThucSoHoc::BieuThucSoHoc(int capDo)
     }
 }
 
-bool BieuThucSoHoc::kiemtra(float ketqua)
+bool BieuThucSoHoc::kiemtra(float ketqua) const
 {
     
     return ketqua == tinhKetQua();
@@ -91,8 +92,12 @@ istream& operator>>(istream& in, BieuThucSoHoc& x)
     return in;
 }
 
-ostream& operator<<(ostream& out,BieuThucSoHoc x)
+ostream& operator<<(ostream& out,BieuThucSoHoc& x)
 {
-    out << x.a << " " << x.pheptoan << " " << x.b << " = ?" << endl;
+    if (const BieuThucPhucTap* pt = dynamic_cast<const BieuThucPhucTap*>(&x))
+    { 
+        out << "(" << *(pt->getL()) << x.getPheptoan() << *(pt->getR()) << ") = ?";
+    }
+    else out << x.a << " " << x.pheptoan << " " << x.b << " = ?" << endl;
     return out;
 }

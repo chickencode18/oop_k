@@ -1,11 +1,13 @@
 #include "BieuThucTru.h"
 
+BieuThucTru::BieuThucTru() : BieuThucSoHoc()
+{
+    setPheptoan('-');
+}
+
 BieuThucTru::BieuThucTru(int capDo) : BieuThucSoHoc(capDo)
 {
-    //if (capDo != 1)
-    //{
-        setPheptoan('-');
-    //}
+    setPheptoan('-');
 }
 
 float BieuThucTru::tinhKetQua() const

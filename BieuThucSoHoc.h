@@ -20,8 +20,8 @@ public:
 	BieuThucSoHoc();
 	BieuThucSoHoc(int capDo);
 	//void sinhNgauNhien();
-	bool kiemtra(float ketqua);
-	float tinhKetQua() const;
+	virtual bool kiemtra(float ketqua) const;
+	virtual float tinhKetQua() const;
 	friend istream& operator >> (istream& in, BieuThucSoHoc& x);
-	friend ostream& operator << (ostream& out, BieuThucSoHoc x);	
+	friend ostream& operator << (ostream& out, BieuThucSoHoc& x);	
 };
